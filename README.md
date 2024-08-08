@@ -12,21 +12,6 @@ This project focuses on analyzing YouTube trending videos data using a Data Lake
 ### Category ID Data
 - JSON files containing category IDs and titles for each country.
 
-## Data Warehouse Design
-Implemented a four-layer architecture: Raw, Staging, Warehouse, and Datamart.
-
-### Raw Layer
-- Uploaded data to Azure Storage, connected with Snowflake, and created external tables.
-
-### Staging Layer
-- Created dimension tables (e.g., video details, category details) and a fact table to establish a star schema.
-
-### Warehouse Layer
-- Joined dimension tables with the fact table to form a comprehensive star schema.
-
-### Datamart Layer
-- Designed tables to answer business questions, providing insights into video performance, category popularity, and trends.
-
 ## Data Processing and Integration
 ### Snowflake Setup
 - Set up Snowflake databases and tables to handle and process the YouTube data.
